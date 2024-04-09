@@ -1,0 +1,32 @@
+.admin-container {
+    text-align: center;
+  }
+  
+  .admin-actions {
+    margin-top: 20px;
+  }
+  
+  .admin-actions a,button {
+    display: inline-block;
+    margin: 0 10px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .admin-actions a:hover {
+    background-color: #0056b3;
+  }
+  
+  .user-management-messages {
+    margin-top: 30px;
+    font-style: italic;
+  }
+  
+  .user-management-messages p {
+    margin: 5px 0;
+  }
+  

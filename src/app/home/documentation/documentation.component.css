@@ -1,0 +1,38 @@
+.documentation {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .documentation h1 {
+    font-size: 24px;
+  }
+  
+  .documentation h2 {
+    font-size: 20px;
+    margin-top: 20px;
+  }
+  
+  .documentation p {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .documentation ul {
+    list-style: disc;
+    margin-left: 20px;
+  }
+  
+  .documentation ul li {
+    font-size: 16px;
+  }
+  .documentation a {
+    color: #202801; 
+    text-decoration: none; 
+    transition: color 0.3s; 
+  }
+  
+  .documentation a:hover {
+    color: #0056b3; 
+  }
+  

@@ -1,0 +1,18 @@
+<!-- change-password.component.html -->
+<div class="admin-container">
+    <h1>Welcome Admin!</h1>
+    <div class="admin-actions">
+      <a routerLink="/admin/addUser">Insert</a>
+      <!-- <button (click)="redirecttoinsert()">Insert</button> -->
+      <a routerLink="/admin/getUser">View, Modify & Delete</a>
+      <!-- <a routerLink="/admin/changePassword">Change Password</a> -->
+      <button (click)="redirecttochangepassword()">Change Password</button>
+      <a routerLink=""style="background-color: red;" (click)="logout()">LOGOUT</a>
+    </div>
+    <div class="user-management-messages">
+      <p>Welcome to the user management system. Here you can perform various actions to manage users.</p>
+      <p>Make sure to use these actions responsibly.</p>
+    </div>
+    <router-outlet></router-outlet>
+  </div>
+  

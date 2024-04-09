@@ -1,0 +1,23 @@
+<div class="user-container">
+    <h1>Welcome User!</h1>
+    <div class="user-details">
+        <p><strong>Email:</strong>{{data?.email}} </p>
+        <p><strong>Name:</strong>{{data?.Name}} </p>
+        <p><strong>Age:</strong> {{data?.age}}</p>
+        <!-- Add more user details here -->
+    </div>
+    <div class="user-actions">
+        <button (click)="changePassword()">Change Password</button>
+        <button (click)="updateDetails()">Update Details</button> 
+        <!-- <a routerLink="/user/change_password">Change Password</a> -->
+        <!-- <a routerLink="/user/update">Update Details</a> -->
+        <button (click)="deleteAccount()">Delete Account</button>
+        <button (click)="logout()" style="background-color: red;">Logout</button>
+    </div>
+    <div class="user-messages">
+        <p>Welcome to your user page. Here you can manage your account.</p>
+        <p>Be careful while performing sensitive actions.</p>
+    </div>
+    <router-outlet></router-outlet>
+</div>
+

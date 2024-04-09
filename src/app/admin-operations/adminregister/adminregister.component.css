@@ -1,0 +1,68 @@
+.registration-container {
+    max-width: 400px;
+    margin: auto;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input[type="email"],
+  input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .instructions {
+    font-style: italic;
+    color: #888;
+  }
+  .registration-container {
+    max-width: 400px;
+    margin: auto;
+    position: relative; /* Added */
+  }
+  
+  /* New CSS for login container */
+  .login-container {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Style for login button */
+  .login-button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px; /* Added margin between text and button */
+  }
+  
+  /* Additional CSS to style the "Already registered? Login" text */
+  .login-container p {
+    margin: 0;
+    color: #888;
+  }
+  
+  

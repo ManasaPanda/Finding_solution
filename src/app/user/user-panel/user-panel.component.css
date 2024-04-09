@@ -1,0 +1,44 @@
+.user-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  .user-details {
+    margin-bottom: 20px;
+  }
+  
+  .user-actions {
+    text-align: center;
+  }
+  
+  .user-actions button,a {
+    margin: 5px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .user-actions button:hover {
+    background-color: #0056b3;
+  }
+  
+  .user-messages {
+    margin-top: 20px;
+  }
+  
+  .user-messages p {
+    margin-bottom: 10px;
+  }
+  a{
+    text-decoration: none;
+  }

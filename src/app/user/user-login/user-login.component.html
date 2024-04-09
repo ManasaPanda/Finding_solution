@@ -1,0 +1,27 @@
+<div class="login-container">
+    <h2>User Login</h2>
+    <form (ngSubmit)="loginUser()">
+      <div class="form-group">
+        <label for="id">id:</label>
+        <input type="text" id="id" name="id" [(ngModel)]="id" required>
+      </div>
+      <div class="form-group">
+        <label for="id">Email:</label>
+        <input type="text" id="id" name="id" [(ngModel)]="email" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" [(ngModel)]="password" required>
+      </div>
+      <button type="submit">Login</button>
+    </form>
+    <p class="instructions">Please enter your ID and password to login.</p>
+    <div [ngClass]="{'success-message':!iferror,'error-message':iferror}" *ngIf="message">
+      {{ message }}
+    </div>
+</div>
+
+<div class="register-button-container">
+    <p>Not registered? Click the button below:</p>
+    <button class="register-button" (click)="navigateToRegister()">Register</button>
+</div>

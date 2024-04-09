@@ -1,0 +1,25 @@
+<div class="registration-container">
+    <h2>Admin Registration</h2>
+    <form (ngSubmit)="registerAdmin()">
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" [(ngModel)]="admin.email" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" [(ngModel)]="admin.password" required>
+      </div>
+      <button type="submit">Register</button>
+    </form>
+    <!-- <p class="instructions">Please enter your email and password to register as an admin.</p> -->
+    <div [ngClass]="{'success-message':!iferror,'error-message':iferror}" *ngIf="message">
+      {{ message }}
+    </div>
+
+    <div class="login-container">
+        <p>Already registered? 
+        <button class="login-button" (click)="redirecttiLogin()">Login</button>
+      </div>
+    
+  </div>
+  

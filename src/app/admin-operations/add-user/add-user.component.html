@@ -1,0 +1,36 @@
+
+<!-- post-data.component.html -->
+
+<div class="container">
+    <h2>Add New user</h2>
+    <form (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <label for="id">ID:</label>
+        <input type="text" class="form-control" id="id" name="id" [(ngModel)]="user.id" required>
+      </div>
+      <div class="form-group">
+        <label for="name">Email:</label>
+        <input type="text" class="form-control" id="name" name="email" [(ngModel)]="user.email" required>
+      </div>
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" class="form-control" id="name" name="name" [(ngModel)]="user.Name" required>
+      </div>
+      <div class="form-group">
+        <label for="age">Age:</label>
+        <input type="text" class="form-control" id="age" name="age" [(ngModel)]="user.age" required>
+      </div>
+      <div class="form-group">
+        <label for="password">password:</label>
+        <input type="password" class="form-control" id="password" name="password" [(ngModel)]="user.password" required>
+      </div>
+      <button type="submit" class="btn btn-primary">ADD</button>
+    </form>
+    <div [ngClass]="{'success-message':!iferror,'error-message':iferror}" *ngIf="message">
+      {{ message }}
+    </div>
+    <!-- <div class="center-button">
+      <button (click)="close()">close</button>
+    </div> -->
+  </div>
+  

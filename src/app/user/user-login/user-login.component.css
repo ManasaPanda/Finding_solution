@@ -1,0 +1,67 @@
+.login-container {
+    max-width: 400px;
+    margin: auto;
+  }
+  
+  h2 {
+    text-align: center;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"],
+  input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .instructions {
+    font-style: italic;
+    color: #888;
+  }
+  
+  .additional-content {
+    margin-top: 20px;
+  }
+  
+  .additional-content p {
+    color: #333;
+  }
+  
+  .register-button-container {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .register-button {
+    background-color: #28a745;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .register-button:hover {
+    background-color: #218838;
+  }
+  

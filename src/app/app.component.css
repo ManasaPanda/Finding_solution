@@ -1,0 +1,42 @@
+/* Define styles for the wrapper and main content area */
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .main-content {
+    display: flex;
+    flex: 1;
+  }
+  
+  .content {
+    flex: 1;
+    padding: 20px;
+    background-color: #ecf0f1; /* Light background color for main content */
+  }
+  
+  /* Styles for header */
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 1.5em;
+  }
+  
+  /* Styles for footer */
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    margin-top: auto; /* Footer sticks to the bottom of the page */
+  }
+  
+  footer p {
+    margin: 0;
+  }
+  

@@ -1,0 +1,30 @@
+<div class="container">
+  <h2>Edit details</h2>
+  <form #updateuser="ngForm">
+    <div class="form-group">
+      <label for="id">ID: {{user.id}}</label>
+    </div>
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="text" class="form-control" id="email" name="email" [(ngModel)]="user.email" #nameInput="ngModel" required
+      email>
+      </div>
+      <div class="form-group">
+      <label for="name">Name:</label>
+      <input type="text" class="form-control" id="name" name="name" [(ngModel)]="user.name" #nameInput="ngModel" required
+        maxlength="20">
+      <span style="color: red;" *ngIf="nameInput.invalid && nameInput.touched"> Name must be with in 20 character</span>
+    </div>
+    <div class="form-group">
+      <label for="age">Age:</label>
+      <input type="number" class="form-control" id="age" name="age" [(ngModel)]="user.age" required #inputage="ngModel">
+    </div>
+    <button type="button" class="btn-primary" (click)="updateData()" [disabled]="updateuser.invalid">Update</button>
+    <div [ngClass]="{'success-message':!iferror,'error-message':iferror}" *ngIf="message">
+      {{ message }}
+    </div>
+  </form>
+  <div class="center-button">
+    <button (click)="close()">close</button>
+  </div>
+</div>

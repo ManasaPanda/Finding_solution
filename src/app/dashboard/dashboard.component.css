@@ -1,0 +1,53 @@
+.container {
+    padding: 20px;
+  }
+  
+  .container h2 {
+    color: #333;
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+  .container p {
+    color: #555;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+  }
+  
+  .login-options,
+  .related-links {
+    margin-top: 30px;
+  }
+  
+  .login-options h3,
+  .related-links h3 {
+    color: #007bff;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .login-options ul,
+  .related-links ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .login-options li,
+  .related-links li {
+    margin-bottom: 10px;
+  }
+  
+  .login-options a,
+  .related-links a {
+    color: #333;
+    font-size: 18px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .login-options a:hover,
+  .related-links a:hover {
+    color: #007bff;
+  }
+  

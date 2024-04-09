@@ -1,0 +1,43 @@
+<div class="user-list-container">
+  <div class="sort-and-search-container">
+    Sort records using age:
+    <select name="selectfilter" [(ngModel)]="searchresult">
+      <option value="select" selected>select</option>
+      <option value="asc">Asc</option>
+      <option value="Desc">Desc</option>
+    </select>
+    <div>
+      Search By Name:
+      <input type="text" [(ngModel)]="searchCriteria" placeholder="search here">
+    </div> 
+    <!-- <button (click)="input()">Search</button> -->
+  </div>
+    <h2>User List</h2>
+  <table datatable [tdOptions]="tdoptions">
+      <thead >
+        <tr>
+          <th>ID</th>
+          <th>Email</th>
+          <th>Name</th>
+          <th>Age</th>
+          <th>operation</th>
+        </tr>
+      </thead>
+      <tbody> 
+        <tr *ngFor="let item of data | sorting : searchresult | searchingByid:searchCriteria" appModifyNameUsingAge>
+          <td>{{ item.id }}</td>
+          <td>{{item.email}}</td>
+          <td>{{ item.Name }}</td>
+          <td>{{ item.age }}</td>
+          <td>
+            <div class="button-container">
+            <button type="button" class="btn-update" (click)="updateData(item.id)">Update</button>
+            <button type="button" class="btn-delete" (click)="deleteData(item.id)">Delete</button>
+          </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+    <!-- <div appComponentChangePassword></div> -->
+    
